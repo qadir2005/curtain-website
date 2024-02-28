@@ -1,0 +1,761 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    /* font-family: "Sofia", sans-serif; */
+}
+
+a {
+    color: black;
+}
+
+/* ----styling of header ----- */
+
+header {
+    width: 100%;
+
+}
+
+/* ----styling of navbar one ---- */
+.nav_1 {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 2px 5px gray;
+    flex-wrap: wrap;
+    background-color: #c36a2d;
+}
+
+.nav_1 .left p {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Roboto";
+    color: white;
+}
+
+.nav_1 .left span {
+    color: orange;
+}
+
+.nav_1 .right i {
+    cursor: pointer;
+    color: white;
+    font-weight: 550;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+/* ----- Styling of navbar 2 ------- */
+
+.nav_2 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav_2 .contact {
+    display: inline;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.website_contact a {
+    background-color: #c36a2d;
+    color: white;
+    padding: 0.9vw 1.5vw;
+    border-radius: 5px;
+}
+
+.phone,
+.email {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    color: #c3692ddf;
+}
+
+.phone {
+    margin-bottom: 10px;
+}
+
+.icon i {
+    color: #c36a2d;
+}
+
+.nav_2 .logo {
+    text-align: center;
+    font-size: 5vw;
+    letter-spacing: 3px;
+}
+
+.main_logo span {
+    font-family: "lobster";
+    background: linear-gradient(to top, #feb47b, #ff7e5f);
+    background-clip: text;
+    -webkit-text-fill-color: orange;
+}
+
+.phone p {
+    margin-right: 20px;
+    color: #c3692dcc;
+}
+
+.nav_2 .logo .main_logo {
+    font-size: 2.5rem;
+    font-weight: 550;
+    color: #c36a2d;
+    font-family: "lobster";
+}
+
+.logo .slogan {
+    font-family: 'Style Script';
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.main_logo span {
+    color: orange;
+}
+
+#iconbar {
+    display: none;
+}
+
+/* ------ STYLING OF NAVBAR 3 ------ */
+.fa-xmark {
+    display: none;
+    color: #C36A2D;
+    font-size: 26px;
+    position: relative;
+    left: 92%;
+}
+
+.cross {
+    display: none;
+}
+
+.nav_3 {
+    width: 100%;
+    height: 80px;
+    padding-top: 2vw;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px gray;
+
+    background-color: white;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+ul li {
+    list-style: none;
+    position: relative;
+}
+
+ul li i {
+    font-size: 22px;
+    margin-right: 5px;
+    color: #c36a2d;
+}
+
+ul li a {
+    font-family: 'Roboto';
+    color: black;
+    font-weight: 550;
+    font-size: 18px;
+    position: relative;
+    transition: all ease 0.5;
+}
+
+ul li a:hover {
+    font-size: 19px;
+}
+
+.active::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #c36a2d;
+    left: 0;
+    bottom: -8px;
+}
+
+ul li a::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    background-color: #c36a2d;
+    left: 0;
+    bottom: -6px;
+    transition-duration: 0.4s;
+}
+
+ul li a:hover::before {
+    width: 100%;
+}
+
+.hover {
+    transition-duration: 0.5s;
+}
+
+.hover:hover>.dropdown {
+    display: block;
+}
+
+/* dropdown menu styling */
+
+.dropdown {
+    display: block;
+    position: relative;
+    z-index: 4;
+    background-color: white;
+    display: none;
+}
+
+.dropdown li {
+    border-bottom: 3px solid #d0631a;
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.dropdown li:hover {
+    border-bottom: none;
+}
+
+#nav_icon {
+    display: none;
+}
+
+/* -------- Styling of whatsapp ---------- */
+.whatsapp_fixed {
+    position: fixed;
+    right: 15px;
+    background-color: green;
+    font-size: 20px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 99;
+    bottom: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 15px;
+}
+
+.whatsapp_fixed i {
+    color: white;
+    padding: 8px;
+    font-size: 30px;
+
+}
+
+
+/* ------ Background Image ------- */
+
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    min-height: 300px;
+}
+
+img {
+    position: relative;
+    width: 100%;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 4vw;
+    font-weight: 500;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#prevBtn {
+    left: 2vw;
+}
+
+.best {
+    color: orange;
+}
+
+#nextBtn {
+    right: 2vw;
+}
+
+.slider_shadow {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: black;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+
+.slider_content {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    color: white;
+    min-width: 100%;
+    margin-left: 0;
+    padding-left: 0%;
+    padding-right: 2.5%;
+}
+
+.typewriter {
+    font-size: 3vw;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding-left: 40%;
+}
+
+.heading_one {
+    text-align: center;
+    font-size: 4.5vw;
+}
+
+.slider_content p {
+    text-align: center;
+    font-size: 3vw;
+}
+
+.slider_content p.white span {
+    font-weight: 600;
+    color: orange;
+}
+
+.slider_content p.span {
+    margin-top: 2vw;
+}
+
+p.white {
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+/* -----------  Line designing --------- */
+
+.line {
+    height: 5px;
+    width: 100%;
+    background-color: #c3692d91;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+/* Animation of typing with this website (https://freefrontend.com/css-typing-text/) only use css  */
+
+h1 {
+    font-size: 9vmin;
+    color: white;
+    text-align: left;
+    font-weight: 700;
+    margin: 1rem 0 1rem 2rem;
+}
+
+/* Styling of New Arrival */
+
+.new_arrival {
+    text-align: center;
+}
+
+.new_arrival .section_heading {
+    color: #d0631a;
+    font-size: 40px;
+    font-weight: 550;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.section_heading span {
+    color: black;
+}
+
+.new_arrival p {
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin: 15px 0;
+}
+
+/* In Arrival section Designing of cards */
+
+.carts {
+    margin-top: 5vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cart {
+    box-shadow: 5px 2px 15px gray;
+    width: 300px;
+    height: auto;
+    margin-bottom: 2vw;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.cart:hover {
+    transform: translatey(-15px);
+}
+
+.cart::before {
+    content: "Up to 70% OFF";
+    color: white;
+    padding: 7px 6%;
+    text-align: start;
+    transform: rotate(330deg);
+    position: absolute;
+    z-index: 99;
+    left: -6px;
+    top: 21px;
+    font-size: 10px;
+    font-weight: 550;
+    background-color: rgb(195, 106, 45);
+    box-shadow: black 3px 2.5px 50px;
+}
+
+.cart img {
+    width: 90%;
+    margin-top: 5%;
+}
+
+.cart_details {
+    text-align: left;
+    text-align: start;
+
+    padding-left: 15px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.cart_details h2 {
+    font-family: 'Overlock SC';
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+.cart_details p {
+    font-size: 15px;
+    letter-spacing: normal;
+
+}
+
+.cart_details p a {
+    font-size: 13px;
+}
+
+.cart_details i {
+    font-size: 12px;
+    color: orange;
+}
+
+.offered_price {
+    font-weight: 600;
+}
+
+.original_price {
+    font-weight: 300;
+    font-size: 12px;
+    color: red;
+    text-decoration: line-through;
+    margin-left: 15px;
+}
+
+
+/*  ------------    Featured Slider     -----------------  */
+
+.featured {
+    margin-bottom: 10vw;
+}
+
+.featured h1 {
+    color: #c36a2d;
+    text-align: center;
+    margin-bottom: 5vw;
+    font-size: 45px;
+    text-transform: uppercase;
+    word-spacing: 30px;
+}
+
+.featured .featured h1 span {
+    color: black;
+}
+
+.featured .swiper-slide {
+    width: 400px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    padding: auto;
+}
+
+.featured .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    /* padding-left: 35%; */
+}
+
+/* ---------- Styling of Footer Designs ------------- */
+
+footer {
+
+    margin-top: 10vw;
+    border-top: 5px solid #c36a2d;
+}
+
+.footer_logo {
+    font-family: "lobster";
+    color: #C36A2D;
+    font-size: 40px;
+    margin-top: 5vw;
+    letter-spacing: 4px;
+}
+
+.footer_logo span {
+    color: #FFA500;
+    font-family: "lobster";
+}
+
+.logo-bottom {
+    text-align: center;
+    margin-top: 2vw;
+}
+
+.logo-bottom .slogan {
+    font-family: "Style script";
+    font-size: 20px;
+    font-weight: 650;
+    letter-spacing: 3px;
+}
+
+.footer-para {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 2vw;
+}
+
+.footer-para p {
+    line-height: 25px;
+    font-size: 20px;
+    color: #c36a2d;
+    margin-bottom: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-icon {
+    text-align: center;
+    margin-top: 4vw;
+}
+
+.footer-icon i {
+    font-size: 30px;
+    margin-bottom: 1.5vw;
+    color: #aa4604;
+    margin-right: 10px;
+}
+
+.footer-icon p i {
+    font-size: 20px;
+}
+
+.footer-icon p {
+    margin-bottom: 0px;
+}
+
+.last-footer {
+    height: 50px;
+    border-top: 3px solid #d0631aaa;
+    box-sizing: border-box;
+
+}
+
+.last-footer p {
+    text-align: center;
+    padding-top: 20px;
+    color: #C36A2D;
+}
+
+.last-footer p a {
+    color: black;
+}
+
+.last-footer p i {
+    color: black;
+}
+
+.last-footer p span {
+    color: black;
+}
+
+
+/* -------- Media Query --------- */
+
+
+
+
+@media only screen and (max-width: 650px) {
+
+    .nav_2 .contact,
+    .nav_2 .website_contact {
+        display: none;
+    }
+
+    .nav_2 .logo .main_logo {
+        font-size: 30px;
+    }
+
+    .nav_1 .right i {
+        margin-top: 5px;
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+    .nav_1 .right {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .nav_1 .left p {
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .featured h1 {
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .featured h1 span {
+        color: black;
+    }
+
+    .featured .swiper-slide {
+        width: 250px;
+        height: 250px;
+
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .new_arrival .heading .section_heading {
+        font-size: 30px;
+    }
+
+    .new_arrival .heading p {
+        font-size: 15px;
+        margin-bottom: 50px;
+    }
+    .carts .cart {
+        width: 300px;
+    }
+
+    .carts .cart .cart_details span i {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .carts .cart .cart_details p {
+        cursor: pointer;
+    }
+
+    .footer-para p {
+        display: none;
+    }
+
+    .footer_logo {
+        font-size: 30px;
+    }
+
+    .footer_logo .slogan {
+        font-size: 2px;
+    }
+
+    .last-footer {
+        font-size: 15px;
+        padding-bottom: 35px;
+    }
+
+    .footer-icon {
+        margin-bottom: 10px;
+    }
+
+    /* styling of navbar */
+
+    .main_navbar {
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        z-index: 4;
+        top: 70px;
+        height: 100%;
+        width: 70%;
+        display: none;
+
+    }
+
+    .main_navbar li {
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 100;
+        background-color: white;
+
+    }
+
+    #iconbar {
+        display: block;
+        font-size: 23px;
+        position: absolute;
+        top: 100px;
+        left: 20px;
+        color: #aa4604;
+        font-weight: 900;
+    }
+
+    .cross {
+        display: block;
+    }
+}

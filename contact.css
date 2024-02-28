@@ -1,0 +1,582 @@
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ----styling of header ----- */
+
+header {
+    width: 100%;
+    
+}
+
+/* ----styling of navbar one ---- */
+.nav_1 {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 2px 5px gray;
+    flex-wrap: wrap;
+    background-color: #c36a2d;
+}
+.nav_1 .left p {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Roboto";
+    color: white;
+}
+.nav_1 .left span {
+    color: orange;
+}
+.nav_1 .right i {
+    cursor: pointer;
+    color: white;
+    font-weight: 550;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+/* ----- Styling of navbar 2 ------- */
+
+.nav_2 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav_2 .contact {
+    display: inline;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.website_contact a {
+    background-color: #c36a2d;
+    color: white;
+    padding: 0.9vw 1.5vw;
+    border-radius: 5px;
+}
+.phone, .email {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    color: #c3692ddf;
+}
+.phone {
+    margin-bottom: 10px;
+}
+.icon i {
+    color: #c36a2d;
+}
+.nav_2 .logo {
+    text-align: center;
+    font-size: 5vw;
+    letter-spacing: 3px;
+}
+.main_logo span {
+    font-family: "lobster";
+    background: linear-gradient(to top, #feb47b, #ff7e5f);
+    background-clip: text;
+    -webkit-text-fill-color: orange;
+}
+.phone p {
+    margin-right: 20px;
+    color: #c3692dcc;
+}
+.nav_2 .logo .main_logo {
+    font-size: 2.5rem;
+    font-weight: 550;
+    color: #c36a2d;
+    font-family: "lobster";
+}
+.logo .slogan {
+    font-family: 'Style Script';
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+.main_logo span {
+    color: orange;
+}
+#iconbar{
+    display: none;
+}
+/* ------ STYLING OF NAVBAR 3 ------ */
+.fa-xmark{
+    display: none;
+    color: #C36A2D;
+    font-size: 26px;
+    position: relative;
+    left: 92%;
+}
+.cross{
+    display: none;
+}
+.nav_3 {
+    width: 100%;
+    height: 80px;
+    padding-top: 2vw;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px gray;
+}
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+ul li {
+    list-style: none;
+    position: relative;
+}
+ul li i {
+    font-size: 22px;
+    margin-right: 5px;
+    color: #c36a2d;
+}
+ul li a {
+    font-family: 'Roboto';
+    color: black;
+    font-weight: 550;
+    font-size: 18px;
+    position: relative;
+    transition: all ease 0.5;
+}
+ul li a:hover {
+    font-size: 19px;
+}
+.active::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #c36a2d;
+    left: 0;
+    bottom: -8px;
+}
+ul li a::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    background-color: #c36a2d;
+    left: 0;
+    bottom: -6px;
+    transition-duration: 0.4s;
+}
+ul li a:hover::before {
+    width: 100%;
+}
+.hover{
+    transition-duration: 0.5s;
+}
+.hover:hover>.dropdown{
+    display: block;
+}
+
+/* dropdown menu styling */
+
+.dropdown{
+    display: block;
+    position: relative;
+    z-index: 4;
+    background-color: white;
+    display: none;    
+}
+.dropdown li{
+    border-bottom: 3px solid #d0631a;
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    padding-top:  40px;
+}
+.dropdown li:hover{
+    border-bottom: none;
+}
+#nav_icon{
+    display: none;
+}
+
+/* -------- Styling of whatsapp ---------- */
+.whatsapp_fixed {
+    position: fixed;
+    right: 15px;
+    background-color: green;
+    font-size: 20px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 99;
+    bottom: 30px;   
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 15px;
+}
+.whatsapp_fixed i{
+    color: white;
+    padding: 8px;
+    font-size: 30px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- Styling of Footer Designs ------------- */
+
+footer{
+   
+    margin-top: 10vw;
+    border-top: 5px solid #c36a2d;
+}
+.footer_logo{
+    font-family: "lobster";
+    color: #C36A2D;
+    font-size: 40px;
+    margin-top: 5vw;
+    letter-spacing: 4px;
+}
+.footer_logo span{
+    color: #FFA500;
+    font-family: "lobster";
+}
+.logo-bottom{
+    text-align: center;
+    margin-top: 2vw;
+}
+.logo-bottom .slogan{
+    font-family: "Style script";
+    font-size: 20px;
+    font-weight: 650;
+    letter-spacing: 3px;
+}
+.footer-para{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 2vw;
+}
+.footer-para p{
+    line-height: 25px;
+    font-size: 20px;
+    color: #c36a2d;
+    margin-bottom: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-icon{
+    text-align: center;
+    margin-top: 4vw;
+}
+.footer-icon i{
+    font-size: 30px;
+    margin-bottom: 1.5vw;
+    color: #aa4604;
+    margin-right: 10px;
+}
+.footer-icon p i{
+    font-size: 20px;
+}
+.footer-icon p{
+    margin-bottom: 0px;
+}
+.last-footer{
+    /* height: 50px; */
+    border-top: 3px solid #d0631aaa;
+    box-sizing: border-box;
+    
+}
+.last-footer p{
+    text-align: center;
+    padding-top: 20px;
+    color: #C36A2D;
+}
+.last-footer p a{
+    color: black;
+}
+.last-footer p i{
+    color: black;
+}
+.last-footer p span{
+    color: black;
+}
+
+
+/* ------Styling of main 
+width: 100%;
+height: auto;tag ---------- */
+main{
+    width: 100%;
+    height: auto;
+}
+
+/* -------- Styling of Google map -------- */
+.location{
+    display: block;
+    
+}
+iframe{
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px black;
+    display: block;
+    align-content: center;
+    margin-left: 15%;
+    margin-top: 2rem;
+}
+.location h2{
+    font-size: 2.5rem;
+    text-align: center;
+    display: block;
+    
+}
+
+/* -------- Styling of Contact page ------------- */
+h1{
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+    
+}
+h1 span{
+    color: #C36A2D;
+}
+section{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 5vw;
+}
+.second_address{
+    border: 2px solid #C36A2D;
+}
+.address{
+    flex-basis: 35%;
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+}
+.address i{
+    font-size: 30px;
+    color: #C36A2D;
+
+    margin-bottom: 10px;
+}
+.address .address_div1{
+    font-size: 20px;
+    color: #C36A2D;
+    font-weight: 500;
+    
+}
+.address .address_div2, .address .address_div3{
+    font-size: 14px;
+    color: gray;
+    font-weight: 100;
+}
+.phones i,.gmail i{
+    color: #aa4604;
+    font-size: 22px;
+    margin-right: 15px;
+}   
+.gmail, .phones{
+    display: flex;
+    margin-top: 10px;
+    justify-content: start;
+}
+.phones p, .gmail p{
+    color: #aa4604b9;
+    font-weight: normal;
+}   
+.phones{
+    margin-top: 30px;
+}
+
+.line{
+    width: 2px;
+    height: 400px;
+    background-color: #C36A2D;
+    margin-top: 2rem;
+}
+
+
+.form{
+    flex-basis: 60%;
+}
+.form h1{
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #C36A2D;
+}
+.form input, textarea{
+    color: gray;
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding-left: 10px;
+}
+textarea{
+    height: 100px;
+    font-size: 18px;
+    padding-top: 10px;
+}
+.form button{
+    background-color: #C36A2D;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 2rem;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    transition: 0.2s ease-in;
+}
+.form button:hover{
+    border: 2px solid #aa4604;
+    background-color: white;
+    color: #aa4604;
+}
+
+
+/*  Responsive designs using Media Query */
+
+@media only screen and (max-width: 650px) {
+    .nav_2 .contact , .nav_2 .website_contact{
+        display: none;
+    }
+    .nav_2 .logo .main_logo{
+        font-size: 30px;
+    }
+    .nav_1 .right i{
+        margin-top: 5px;
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .nav_1 .right{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .nav_1 .left p{
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .footer-para p{
+        display: none;
+    }
+    .footer_logo{
+        font-size: 30px;
+    }
+    .footer_logo .slogan{
+        font-size: 2px;
+    }
+    .last-footer{
+        font-size: 15px;
+        padding-bottom: 35px;
+    }
+    .footer-icon{
+        margin-bottom: 10px;
+    }
+    /* styling of navbar */
+    
+    .main_navbar{
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        z-index: 4;  
+        top: 70px;
+        height: 100%;  
+        width: 70%; 
+        display: none;
+        
+    }
+    .main_navbar li{
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 5;
+        
+    }
+    #iconbar{
+        display: block;
+        font-size: 23px;
+        position: absolute;
+        top: 100px;
+        left: 20px;
+        color: #aa4604;
+        font-weight: 900;
+    }
+    .cross{
+        display: block;
+    }
+    iframe{
+        height: 300px;
+        width: 300px;
+        margin-left: 0;
+        border-radius: 10px;
+    }
+
+/* ---- styling of all contact page ----- */
+ main h1{
+    font-size: 2.3rem;
+    margin-top: 15px;
+    margin-bottom: 40px;
+ }
+ .location h2{
+    font-size: 1.5rem;
+ }
+.form{
+    flex-basis: 100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+
+}
+.form h1{
+    font-size: 2rem;
+    margin-top: 40px;
+ }
+.form input, textarea{
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+}
+ 
+.second_address{
+    flex-direction: column-reverse;
+    border: none;
+    width: 200px;
+    margin-left: 0;
+    padding-left: 0;
+}
+.phones, .gmail{
+    margin-left: 25%;
+}
+.line{
+    width: 400px;
+    height: 2px;
+}
+}
